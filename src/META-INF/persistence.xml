@@ -5,11 +5,14 @@
 	<persistence-unit name="HelloJPA" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>com.jpa.Customer</class>
+		<class>com.jpa.Manager</class>
+		<class>com.jpa.Department</class>
+		<class>com.jpa.Order</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql:///jpa" />
 			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="root" />
+			<property name="javax.persistence.jdbc.password" value="123" />
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
